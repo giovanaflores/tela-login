@@ -1,1 +1,1 @@
-Tela de login moderna com HTML, CSS e Sass
+Tela de login moderna com HTML e CSS
