@@ -1,4 +1,80 @@
-@import url(style.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  height: 800px;
+  width: 1500px;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.187);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  
+  
+}
+
+.bem-vindo-volta {
+  background-color: rgb(244, 58, 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  color: #fff;
+  
+}
+
+.bem-vindo-volta button {
+  width: 180px;
+  height: 55px;
+  border-radius: 25px;
+  color: rgb(244, 58, 6);
+  text-transform: uppercase;
+  border: solid;
+  border-color: #fff;
+  background-color: #fff;
+  transition: all 0.4s ease;
+  box-shadow: 0px 0px 20px 5px #ffffff53;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.bem-vindo-volta button:hover {
+  background-color: transparent;
+  border: solid;
+  border-color: #fff;
+  color: #fff;
+  cursor: pointer;
+  border-width: 2px;
+}
+
+.bem-vindo-volta p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px;
+
+}
+
+.bem-vindo-volta h1 {
+  font-size: 3.4rem;
+}
+
 form {
   width: 50%;
   display: flex;
@@ -8,15 +84,18 @@ form {
   height: 100%;
   padding: 10px;
 }
+
 form h1 {
   font-size: 3.2rem;
   margin: 15px;
 }
+
 form .redes-sociais {
   display: flex;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+
 form .redes-sociais a {
   width: 50px;
   height: 50px;
@@ -30,20 +109,24 @@ form .redes-sociais a {
   border-radius: 50%;
   transition: all 0.4s ease;
 }
+
 form .redes-sociais a#google {
   padding-left: 10px;
 }
+
 form .redes-sociais a:hover {
   background-color: rgb(249, 76, 8);
   color: #fff;
   border: none;
 }
+
 form .inputs {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
-form .inputs .input {
+
+form .inputs input {
   height: 50px;
   width: 350px;
   padding: 10px;
@@ -61,19 +144,22 @@ form .inputs .input {
   letter-spacing: 1px;
   margin: 10px;
 }
-form .inputs input::-moz-placeholder {
+
+form .inputs .input::-moz-placeholder {
   font-size: 1rem;
   color: #000;
   font-weight: 500;
   letter-spacing: 1px;
 }
-form .inputs input::placeholder {
+
+form .inputs .input::placeholder {
   font-size: 1rem;
   color: #000;
   font-weight: 500;
   letter-spacing: 1px;
 }
-form .botao-criar-conta {
+
+form button {
   width: 180px;
   height: 55px;
   border-radius: 20px;
@@ -86,8 +172,9 @@ form .botao-criar-conta {
   transition: all 0.4s ease;
   text-transform: uppercase;
 }
-form .botao-criar-conta:hover {
+
+form button:hover {
   background-color: rgb(212, 66, 8);
   color: #fff;
   cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
+}
